@@ -8,6 +8,7 @@ import ListPage from './ListPage.jsx'
 
 function App(){
     return(
+        <Router basename="/SearchEngine">
         <div>
             <Navbar />
             <Routes>
@@ -16,6 +17,7 @@ function App(){
                 <Route path="/list" element={<ListPage />} />
             </Routes>
         </div>
+        </Router>
     )
 }
 
